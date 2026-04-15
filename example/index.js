@@ -1,5 +1,5 @@
 "use strict";
 
-const macedonianSdaHymnal = require("../lib");
+import macedonianSdaHymnal from "../lib/index.js";
 
-console.log(macedonianSdaHymnal());
+macedonianSdaHymnal(28).then(x => console.log(JSON.stringify(x, null, 4))).catch(console.error);

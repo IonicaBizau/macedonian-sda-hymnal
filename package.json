@@ -1,6 +1,7 @@
 {
   "name": "macedonian-sda-hymnal",
   "description": "Macedonian SDA Hymnal in JSON format.",
+  "type": "module",
   "keywords": [
     "macedonian",
     "sda",
@@ -39,5 +40,8 @@
   },
   "bugs": {
     "url": "https://github.com/IonicaBizau/macedonian-sda-hymnal/issues"
+  },
+  "dependencies": {
+    "scrape-it": "^6.1.12"
   }
 }
