@@ -8,7 +8,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
     const files = await fs.readdir(path.join(__dirname, "json"));
 
     const finalJson = {
-        lang: "mk",
+        lang: "en",
         header: {
             title: "Macedonian SDA Hymnal",
             shortTitle: "Macedonian Hymnal"
@@ -87,7 +87,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
             topic: findTopic(json.songNumber, finalJson.topics),
             stanzas: {
                 verses: json.verses.filter(v => v.content.refrain === false).map(v => v.content.lines),
-                refrain: json.verses.find(v => v.content.refrain === true)?.content?.lines || undefined
+                refrain: json.verses.find(v => v.content.refrain === true)?.content?.lines || []
             }
         });
     }
