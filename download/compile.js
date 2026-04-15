@@ -82,7 +82,7 @@ const __dirname = path.dirname(new URL(import.meta.url).pathname);
         const content = await fs.readFile(path.join(__dirname, "json", file), "utf-8");
         const json = JSON.parse(content);
         finalJson.hymns.push({
-            num: json.songNumber,
+            num: json.songNumber.toString(),
             title: json.title,
             topic: findTopic(json.songNumber, finalJson.topics),
             stanzas: {
