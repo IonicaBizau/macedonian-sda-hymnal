@@ -92,7 +92,7 @@ macedonianSdaHymnal(28).then(x => console.log(JSON.stringify(x, null, 4))).catch
 ## :memo: Documentation
 
 
-macedonianSdaHymnal
+### `macedonianSdaHymnal(songNumber)`
 Scrapes the Macedonian SDA Hymnal website for a given song number and returns the song data.
 The returned data includes the song number, title, verses, and refrain (if any).
 
